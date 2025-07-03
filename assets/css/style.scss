@@ -1,0 +1,13 @@
+---
+--- 
+
+@import "{{ site.theme }}";
+
+.header-logo {
+  float: right;
+  max-height: 70px;
+  margin-left: 1rem;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
