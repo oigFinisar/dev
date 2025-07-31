@@ -30,8 +30,7 @@ Requirements: Windows 10 or above
 1. Connect WaveAnalyzer to a PC via USB.
 2. Turn on WaveAnalyzer.
 3. Wait 2 minutes for startup.
-4. Run the WaveAnalyzer Software and follow the instructions. The connection wizard will start automatically.
-
+4. Run the WaveAnalyzer Software and follow the instructions.
 
 # Connect via Ethernet (LAN)
 
