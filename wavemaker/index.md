@@ -1,85 +1,79 @@
 ---
 layout: instrument
 title: WaveMaker
-header_logo: WaveMaker4000A.png
 ---
 
-[Homepage](https://www.coherent.com/networking/optical-instrumentation/wavemakers)
+# Getting Started
 
-# Prerequisites
-- To get started with the WaveMaker, you will need:
-  - 1x WaveMaker
-  - 1x Ethernet or USB cable
-  - 1x power cable
-  - 1x PC or laptop (not supplied)
+This page helps you to get started with your WaveMaker.
 
-# Connect via Local Area Network
+For more information, visit the [WaveMaker Page](https://www.coherent.com/networking/optical-instrumentation/wavemakers) on our website.
 
-- Connect the Ethernet cable from the WaveMaker to a network switch or wall socket port within the same subnet as the PC.
-- Connect the power cable from the WaveMaker to a mains power inlet.
-- Switch on the WaveMaker power from the rear panel. The front panel indicator LED should now turn orange/red to indicate that the device is OFF.
-- Turn the key to the ON position from the front panel. The front panel indicator LED should now turn green to indicate that the device is ON.
-- Wait at least five minutes for the device to warm up.
-- Open a web browser on the PC.
-- Navigate to the following web page.
-  - mDNS: {serial number}.local
-  -  DHCP: IP address automatically assigned by the DHCP server
-  -  Fixed IP (Ethernet): 169.254.6.8 (default)
-  -  Fixed IP (USB): 192.168.6.8 (default)
-- The WaveMaker can now be controlled using the web interface.
+## Requirements
 
-# Connecting via Direct Connection
-- Connect the Ethernet or USB cable from the WaveMaker directly to a PC.
-- Connect the power cable from the WaveMaker to a mains power inlet.
-- Switch on the WaveMaker power from the rear panel. The front panel indicator LED should now turn orange/red to indicate that the device is OFF.
-- Turn the keylock switch to the ON position from the front panel. The front panel indicator LED should now turn green to indicate that the device is ON.
-- Open the network settings on the PC. The network adapter for the WaveMaker should appear in the adapters list after a short time.
-- Configure the IPv4 properties of the network adapter. The recommended settings are as follows.
-  - IP Address: set to Auto.
-  - DNS Server Address: set to Auto.
-  - Private IP Address: set to Auto.
-- Save the new network settings and reboot the WaveMaker.
-- Wait at least five minutes for the device to warm up.
-- Open a web browser on the PC.
-- Navigate to the following web page.
-  - mDNS: {serial number}.local
-  - Ethernet: 169.254.6.8 (default)
-  - USB: 192.168.6.8 (default)
-- The WaveMaker can now be controlled using the web interface.
+To get started with your WaveMaker, you will need:
 
-# Troubleshooting
+- 1x WaveMaker
+- 1x Ethernet or USB cable
+- 1x power cable
+- 1x PC or laptop (not supplied)
 
-## Check Physical Connections
-- Option 1: Ethernet cable is connected to networked wall socket port within the same subnet as PC.
-- Option 2: Ethernet or USB cable is connected directly to PC.
-- Power cable is connected from the WaveMaker to mains power.
+## System
 
-## Reboot Devices
-- WaveMaker
-- Host PC
-- Networking Equipment: router, modem, switch, etc.
+- Google Chrome, Mozilla Firefox, or Microsoft Edge browser
+- Operating System: Windows 10 or above
+- mDNS support (e.g. Bonjour on Windows)
 
-## Check the Network Settings (connecting via Local Area Network)
-- Confirm WaveMaker is in the same subnet as host PC.
-- Confirm WaveMaker is assigned a valid IP address.
-- Confirm host PC and network supports mDNS discovery protocol.
-- Ask network administrator to whitelist the WaveMaker within the network.
-- Connect to WaveMaker via direct connection, then use the Tools page to configure the WaveMaker network settings.
+# Connecting to the WaveMaker
 
-## Check the Host PC Settings (connecting via Direct Connection)
-- Check the IPv4 properties of the network adapter.
-- Confirm the IP address and subnet mask of the WaveMaker is valid.
+## Connect via USB (Recommended)
 
-## Reset the WaveMaker Network Configuration
-- Power on the WaveMaker using the keylock switch from the front panel.
-- Wait at least five minutes for the device to warm up.
-- Long press the Reset button from the rear panel using a small tool, such as a screwdriver. Hold down the button for at least ten seconds.
-- Release the Reset button.
-- Power cycle the WaveMaker.
-- After power cycling, the WaveMaker network configuration should now be reset to the default values.
+1. Connect WaveMaker to a PC via USB.
+2. Turn on WaveMaker.
+3. Wait 5 minutes for startup.
+4. Go to the device webpage in the browser. The serial number can be found on the device.
+   - mDNS: [http://{SERIAL_NUMBER}.local]()
+   - USB: [http://192.168.6.8](http://192.168.6.8)
 
-## Network Configuration Default Values
-- Mode: DHCP then Fixed IP
-- IP Address (Ethernet): 169.254.6.8
-- IP Address (USB): 192.168.6.8
-- Subnet Mask: 255.255.0.0
+## Connect via Ethernet (LAN)
+
+### Option 1: Dynamic IP Address (DHCP Server Available)
+
+After startup, the WaveMaker will look for a DHCP server. If your network provides a DHCP server, the WaveMaker will receive its IP address automatically.
+
+1. **Optional**. If you are unsure if the WaveMaker is in its factory setting:
+   - Turn the WaveMaker on and wait for 2 minutes.
+   - Use a small screwdriver to press the "RESET" button on the rear panel of the WaveMaker for 10 seconds.
+   - Turn the WaveMaker off.
+2. Connect WaveMaker to the LAN socket or router.
+3. Turn on WaveMaker. If the WaveMaker was turned on when you connected the cable, make sure to power-cycle the WaveMaker to trigger DHCP discovery.
+4. Wait 5 minutes for startup.
+5. Go to the device webpage in the browser. The serial number can be found on the device.
+   - mDNS: [http://{SERIAL_NUMBER}.local]()
+   - Dynamic IP: [http://{IP_ADDRESS}]()
+
+### Option 2: Fixed IP Address / Direct Connection
+
+If there is no response from a DHCP server, the WaveMaker will fall back to using a fixed IP address (factory default: [http://169.254.6.8](http://169.254.6.8)). Alternatively, if you make a direct connection to your PC using an Ethernet cable, the WaveMaker will use its fixed IP address.
+
+1. **Optional**. You need to connect to the WaveMaker using the factory setting once in order to reassign the fixed IP address.
+2. Connect WaveMaker to the LAN socket or router or PC via Ethernet.
+3. Turn on WaveMaker. If the WaveMaker was turned on when you connected the cable, make sure to power-cycle the WaveMaker to trigger DHCP discovery.
+4. Wait 5 minutes for startup.
+5. Go to the device webpage in the browser. The serial number can be found on the device.
+   - mDNS: [http://{SERIAL_NUMBER}.local]()
+   - Fixed IP: [http://{IP_ADDRESS}]()
+
+### Option 3: Assign a new Fixed IP Address
+
+If you would like to reassign the fixed IP address for the WaveMaker, continue with the following.
+
+1. Open the _Tools_ page from the navigation bar.
+2. Open the _Networking Configuration_ tab.
+3. Follow the instructions to change the network configuration to the desired network settings.
+4. Check that the WaveMaker is connected to the LAN socket or router or PC via Ethernet.
+5. Power cycle the WaveMaker.
+6. Wait 5 minutes for startup.
+7. Go to the device webpage in the browser. The WaveMaker will now use the newly assigned fixed IP address.
+   - mDNS: [http://{SERIAL_NUMBER}.local]()
+   - Fixed IP: [http://{NEW_IP_ADDRESS}]()

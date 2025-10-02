@@ -4,10 +4,12 @@ title: Instruments
 ---
 
 # Instruments
-Rev 0.1
 
-<!-- - [WaveShaper A-Series](waveshaper/)
+Rev 0.0.2
+
+<!-- - [WaveShaper A-Series](waveshaper/) -->
+<!-- - [WaveAnalyzer S-Series](waveanalyzer/) -->
+
 - [WaveShaper B-Series](waveshaper-b/)
-- [WaveAnalyzer S-Series](waveanalyzer/) -->
 - [WaveAnalyzer B-Series](waveanalyzer-b/)
-<!-- - [WaveMaker](wavemaker/) -->
+- [WaveMaker](wavemaker/)
