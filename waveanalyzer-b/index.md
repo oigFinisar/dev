@@ -13,7 +13,7 @@ Install the WaveAnalyzer software on your PC to connect to your instrument. Requ
 
 ### WaveAnalyzer 1500B Update Package
 
-[Download the WA1500B update package v1.1.0.1](https://files.finisar.com/f/c2b59648c7ca556b)
+[Download the WA1500B update package v1.1.0.1](https://files.finisar.com/f/d87dbbf59ceaf6d1)
 
 Install this package using WaveHub. See [WaveHub downloads and update instructions]({{ '/wavehub/' | relative_url }}).
 
