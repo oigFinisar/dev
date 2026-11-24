@@ -3,75 +3,75 @@ layout: instrument
 title: WaveAnalyzer B-Series
 ---
 
-# Getting Started
+## Software and updates
 
-This page helps you to get started with your WaveAnalyzer.
+### WaveAnalyzer software
 
-For more information, visit the [WaveAnalyzer Page](https://www.coherent.com/networking/optical-instrumentation/waveanalyzer) on our web site.
+Install the WaveAnalyzer software on your PC to connect to your instrument. Requires Windows 10 or later.
 
-# Software
+[Download WaveAnalyzer software (ZIP)](https://files.finisar.com/f/268277cac276b5f7)
 
-Please install the WaveAnalyzer Software on your PC:
+### WaveAnalyzer 1500B Update Package
 
-[Download (ZIP file)](https://files.finisar.com/f/268277cac276b5f7)
+[Download the WA1500B update package v1.1.0.1](https://files.finisar.com/f/c2b59648c7ca556b)
 
-Requirements: Windows 10 or above
+Install this package using WaveHub. See [WaveHub downloads and update instructions]({{ '/wavehub/' | relative_url }}).
 
-## Device updates
+## Connect via USB (recommended)
 
-### Latest Version (v1.1.0.1)
-Download the [WA1500B update package v1.1.0.1](https://files.finisar.com/f/c2b59648c7ca556b).
-
-### Update Package installation
-You can use the [WaveHub]({{ '/wavehub/' | relative_url }}) application to install the update.
-
----
-# Connect via USB (Recommended)
-
-1. Connect WaveAnalyzer to a PC via USB.
-2. Turn on WaveAnalyzer.
+1. Connect the WaveAnalyzer to your PC via USB.
+2. Turn on the instrument.
 3. Wait 2 minutes for startup.
-4. Run the WaveAnalyzer Software and follow the instructions.
+4. Open the WaveAnalyzer software and follow the instructions.
 
-# Connect via Ethernet (LAN)
+## Connect via Ethernet (LAN)
 
-- After startup the instrument will look for a DHCP server.
-- If there is no response from a DHCP server it will fall back to a fixed IP address (factory default: [http://169.254.12.8](http://169.254.12.8)).
+At startup, the instrument looks for a DHCP server. If none responds, it uses a fixed IP address. The factory default is [http://169.254.12.8](http://169.254.12.8).
 
-### Option 1: Dynamic IP Address (DHCP Server Available)
+Choose the setup that matches your connection:
 
-If your network provides a DHCP server, the instrument will receive its IP address automatically.
+- [Network with DHCP](#network-with-dhcp): your network assigns the IP address.
+- [Fixed IP address](#fixed-ip-address): you configure the IP address through USB first.
+- [Direct connection](#direct-connection): you connect the instrument to your PC with an Ethernet cable.
 
-1. Optional: If you are unsure if the instrument is in its factory setting:
-   - Turn the instrument on and wait for 2 minutes.
-   - Use a small screwdriver to press the "RESET" button on the rear panel of the instrument for 10 seconds.
-   - Turn the instrument off.
-2. Connect WaveAnalyzer to the LAN socket or router.
-3. Turn on WaveAnalyzer (if the instrument was turned on when you connected the cable, make sure to power-cycle the instrument to trigger DHCP discovery)
+### Network with DHCP
+
+1. If you are unsure whether the instrument has its factory settings, reset it before connecting:
+   - Turn on the instrument and wait 2 minutes.
+   - Use a small screwdriver to press the "RESET" button on the rear panel for 10 seconds.
+   - Turn off the instrument.
+2. Connect the WaveAnalyzer to the LAN socket or router.
+3. Turn on the instrument. If it was already on when you connected the cable, turn it off and on again to trigger DHCP discovery.
 4. Wait 5 minutes for startup.
-5. Run the WaveAnalyzer Software. Use the connection wizard to discover the instrument. Select "Network with DHCP". You will be asked to enter the serial number (without the "WA" prefix).
+5. Open the WaveAnalyzer software and its connection wizard.
+6. Select "Network with DHCP" and enter the serial number without the "WA" prefix when prompted.
 
-### Option 2: Fixed IP Address
+### Fixed IP address
 
-If there is no DHCP server the instrument will fall back to a fixed IP address. The factory setting is (factory: [http://169.254.12.8](http://169.254.12.8)).
+Configure your chosen IP address through USB before connecting via Ethernet.
 
-1. You need to connect through USB once in order to configure the desired IP address. Disconnect Ethernet and connect USB. Follow the instructions under "Connect via USB".
-2. Open a web browser and go to [http://192.168.12.8](http://192.168.12.8). You should see a web page with the current network status (left) and the setup (right).
-3. Click on "Change" and enter your IP address under "IP Address".
+1. Disconnect Ethernet and connect via USB, following the [USB instructions](#connect-via-usb-recommended) above.
+2. Open [http://192.168.12.8](http://192.168.12.8) in your browser. The page shows the current network status on the left and setup on the right.
+3. Click "Change" and enter your chosen address under "IP Address".
 4. Disconnect USB and connect Ethernet.
-5. Power-cycle the instrument.
+5. Turn the instrument off and on again.
 6. Wait 2 minutes for startup.
-7. Run the WaveAnalyzer Software. Click on "Connection Wizard". Select "Network which uses static IP". You will be asked to enter the fixed IP address.
+7. Open the WaveAnalyzer software and click "Connection Wizard".
+8. Select "Network which uses static IP" and enter the fixed IP address when prompted.
 
-### Option 3: Direct Connection
+### Direct connection
 
-If you make a direct connection to your PC using an Ethernet cable, the unit will use its fixed IP address (factory: [http://169.254.12.8](http://169.254.12.8)).
+When connected directly to your PC with an Ethernet cable, the instrument uses its fixed IP address. The factory default is [http://169.254.12.8](http://169.254.12.8).
 
-1. Optional: If you are unsure if the instrument is in its factory setting:
-   - Turn the instrument on and wait for 2 minutes.
-   - Use a small screwdriver to press the "RESET" button on the backside of the instrument for 10 seconds.
-   - Turn the instrument off
-2. Connect the instrument using an Ethernet cable
-3. Turn the instrument on.
+1. If you are unsure whether the instrument has its factory settings, reset it before connecting:
+   - Turn on the instrument and wait 2 minutes.
+   - Use a small screwdriver to press the "RESET" button on the rear panel for 10 seconds.
+   - Turn off the instrument.
+2. Connect the instrument to your PC with an Ethernet cable.
+3. Turn on the instrument.
 4. Wait 2 minutes for startup.
-5. Run the WaveAnalyzer Software. The instrument will be automatically discovered.
+5. Open the WaveAnalyzer software. It will discover the instrument automatically.
+
+## Product information
+
+For more information, visit the [WaveAnalyzer product page](https://www.coherent.com/networking/optical-instrumentation/waveanalyzer).
