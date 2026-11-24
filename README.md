@@ -47,7 +47,7 @@ Use the local `dev` branch for this refresh, then open a pull request into `main
 `.github/workflows/pages.yml` defines:
 
 - **Pull requests targeting `main`:** install locked dependencies and build. No deployment or Pages write permissions.
-- **Pushes to `dev`:** build only.
+- **Pushes to any branch other than `main`:** build only.
 - **Pushes to `main`:** build, upload the generated site, then deploy that artifact through the `github-pages` environment. The deploy job requires a successful build.
 
 For a bad release, revert the offending change through a PR and merge it. The resulting successful `main` build republishes the prior content. Changing an external download share is a separate release operation; reverting this site does not roll back a file replaced there.
