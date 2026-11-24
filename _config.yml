@@ -1,2 +1,21 @@
-theme: jekyll-theme-slate
+title: Coherent Instrument Support
+description: Software, connection instructions, and support for Coherent optical instruments.
+url: https://oigfinisar.github.io
 baseurl: "/dev"
+theme: jekyll-theme-slate
+
+plugins:
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README*
+  - "*.bat"
+  - "*.sh"
+  - "*.ps1"
+  - .github/
+  - .gitignore
+  - .ruby-version
+  - compose.yml
+  - vendor/
+  - .bundle/
