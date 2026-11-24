@@ -11,4 +11,4 @@ title: Instruments
 - [WaveShaper B-Series](waveshaper-b/)
 - [WaveAnalyzer B-Series](waveanalyzer-b/)
 - [WaveMaker](wavemaker/)
-- [WaveHub device updates](wavehub/)
+- [WaveHub](wavehub/)

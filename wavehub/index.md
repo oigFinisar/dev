@@ -3,17 +3,23 @@ layout: instrument
 title: WaveHub
 ---
 
-# WaveHub
+## Getting Started
 
-WaveHub is an app for updating devices.
+Use WaveHub to install update packages on your devices.
 
-[Download the WaveHub v0.2.1 installer](https://files.finisar.com/f/d2024370af7b228e).
+## Download
+
+[Download WaveHub v0.2.1 for Windows (installer)](https://files.finisar.com/f/d2024370af7b228e)
+
+Run the installer on your PC, then follow the steps below to update a device.
 
 ## Update a device
 
-1. Download and install WaveHub on your PC.
-2. Download the update package for your device from its product page.
-3. Connect the device to your PC or network and turn it on.
-4. Open WaveHub and find your device in the list. Check its model and serial number.
-5. Select **Update** next to the device, then select the downloaded update package.
-6. Keep the device powered on and connected while the update runs. When WaveHub reports success, reboot the device to apply the update.
+Keep the device powered on and connected throughout the update. Wait for the success message before restarting it.
+
+1. Download the update package for your device from its product page.
+2. Connect the device to your PC or network and turn it on.
+3. Open WaveHub and find your device in the list. Check its model and serial number.
+4. Click **Update** next to the device, then select the downloaded update package.
+5. Wait for WaveHub to report that the update was successful.
+6. Restart the device to apply the update.
