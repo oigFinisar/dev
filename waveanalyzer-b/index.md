@@ -17,6 +17,15 @@ Please install the WaveAnalyzer Software on your PC:
 
 Requirements: Windows 10 or above
 
+## Device updates
+
+### Latest Version (v1.1.0.1)
+Download the [WA1500B update package v1.1.0.1](https://files.finisar.com/f/c2b59648c7ca556b).
+
+### Update Package installation
+You can use the [WaveHub]({{ '/wavehub/' | relative_url }}) application to install the update.
+
+---
 # Connect via USB (Recommended)
 
 1. Connect WaveAnalyzer to a PC via USB.
@@ -25,8 +34,6 @@ Requirements: Windows 10 or above
 4. Run the WaveAnalyzer Software and follow the instructions.
 
 # Connect via Ethernet (LAN)
-
-## Overview
 
 - After startup the instrument will look for a DHCP server.
 - If there is no response from a DHCP server it will fall back to a fixed IP address (factory default: [http://169.254.12.8](http://169.254.12.8)).
